@@ -5,9 +5,9 @@
     "passes": 8,
     "pending": 0,
     "failures": 0,
-    "start": "2021-05-06T11:44:46.480Z",
-    "end": "2021-05-06T11:45:28.700Z",
-    "duration": 29537,
+    "start": "2021-05-06T17:09:17.723Z",
+    "end": "2021-05-06T17:10:11.517Z",
+    "duration": 39548,
     "testsRegistered": 8,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "4c0fc021-a49e-425c-9c4a-9eb69fb4d358",
+      "uuid": "382a7e89-2750-443b-997f-bb52dadb298f",
       "title": "",
       "fullFile": "cypress\\integration\\money_gocompare\\error-message-VRN-wrongTest.js",
       "file": "cypress\\integration\\money_gocompare\\error-message-VRN-wrongTest.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "7fc8dd71-1bf6-4b00-88ba-e6ea82a75cd9",
+          "uuid": "f20bb339-5455-4888-8d16-8f5ce45cd91b",
           "title": "Verifying user should receive the error message When entering incorrect VRN",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Verifying incorrect VRN",
               "fullTitle": "Verifying user should receive the error message When entering incorrect VRN Verifying incorrect VRN",
               "timedOut": null,
-              "duration": 3724,
+              "duration": 3827,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit(\"https://money.gocompare.com/vehiclefinance#/car-details\");\ncy.get('#car-registration-search').type(Cypress.env(\"invalid_VRN\"));\ncy.get('.c-button > span').click();\ncy.get('.c-alert').should('contain', 'We are sorry but no vehicles could be found.');",
               "err": {},
-              "uuid": "d81f370c-b2a0-4020-8108-933eb51eb302",
-              "parentUUID": "7fc8dd71-1bf6-4b00-88ba-e6ea82a75cd9",
+              "uuid": "a151a173-c82f-4a9a-a62d-94cc7d9f1e4f",
+              "parentUUID": "f20bb339-5455-4888-8d16-8f5ce45cd91b",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "d81f370c-b2a0-4020-8108-933eb51eb302"
+            "a151a173-c82f-4a9a-a62d-94cc7d9f1e4f"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 3724,
+          "duration": 3827,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -76,7 +76,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "2ca2c093-82de-4cff-91c2-742677d0a1d1",
+      "uuid": "1188f148-0fa0-4f6d-ab9c-42cf7f565deb",
       "title": "",
       "fullFile": "cypress\\integration\\money_gocompare\\money-gocompareE2ETest.js",
       "file": "cypress\\integration\\money_gocompare\\money-gocompareE2ETest.js",
@@ -85,7 +85,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "0aaa68af-13d2-420f-84ab-8e87071ed9b7",
+          "uuid": "f3eff3dc-af38-44b8-bf51-1238e54aec76",
           "title": "Money-GoCompareE2E Test",
           "fullFile": "",
           "file": "",
@@ -96,7 +96,7 @@
               "title": "Should Navigate to car details page too fill the form",
               "fullTitle": "Money-GoCompareE2E Test Should Navigate to car details page too fill the form",
               "timedOut": null,
-              "duration": 5214,
+              "duration": 7036,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -105,8 +105,8 @@
               "context": null,
               "code": "cardetails_PO.carDetailsPage(); // cardetails_PO.carDetailsPage1(data.VRN, data.advertised_price, data.deposit, data.current_mileage,\n//data.expected_annual_mileage, data.loan_duration);",
               "err": {},
-              "uuid": "9c478a31-d065-473c-87cc-bfae77e1f746",
-              "parentUUID": "0aaa68af-13d2-420f-84ab-8e87071ed9b7",
+              "uuid": "07032a26-0446-457c-8ea9-2f4487f56ac6",
+              "parentUUID": "f3eff3dc-af38-44b8-bf51-1238e54aec76",
               "isHook": false,
               "skipped": false
             },
@@ -114,7 +114,7 @@
               "title": "Should navigate to About you Page to fill the form",
               "fullTitle": "Money-GoCompareE2E Test Should navigate to About you Page to fill the form",
               "timedOut": null,
-              "duration": 3106,
+              "duration": 5950,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -123,8 +123,8 @@
               "context": null,
               "code": "aboutyou_PO.aboutYouPage();",
               "err": {},
-              "uuid": "7aef22e2-4de9-45c3-a7c3-31a8cad54a2b",
-              "parentUUID": "0aaa68af-13d2-420f-84ab-8e87071ed9b7",
+              "uuid": "3581e895-14f7-4295-abd3-40c801dbdb67",
+              "parentUUID": "f3eff3dc-af38-44b8-bf51-1238e54aec76",
               "isHook": false,
               "skipped": false
             },
@@ -132,7 +132,7 @@
               "title": "Should navigate to Your Finance Page to fill the form",
               "fullTitle": "Money-GoCompareE2E Test Should navigate to Your Finance Page to fill the form",
               "timedOut": null,
-              "duration": 7394,
+              "duration": 12486,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -141,8 +141,8 @@
               "context": null,
               "code": "yourfinance_PO.yourFinancePage();",
               "err": {},
-              "uuid": "19fb787d-6686-4219-ac93-a5883374d8fe",
-              "parentUUID": "0aaa68af-13d2-420f-84ab-8e87071ed9b7",
+              "uuid": "c4ad7526-f782-4a7e-8d97-029ad0f1d837",
+              "parentUUID": "f3eff3dc-af38-44b8-bf51-1238e54aec76",
               "isHook": false,
               "skipped": false
             },
@@ -150,32 +150,32 @@
               "title": "Should navigate to Your Finance Page to fill the form",
               "fullTitle": "Money-GoCompareE2E Test Should navigate to Your Finance Page to fill the form",
               "timedOut": null,
-              "duration": 40,
+              "duration": 36,
               "state": "passed",
-              "speed": "medium",
+              "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.get('.c-page-header__mobile-step-indicator__title').should('contain', ' Your results ');",
               "err": {},
-              "uuid": "9ef6e370-48d8-433f-9369-91c8e579e5df",
-              "parentUUID": "0aaa68af-13d2-420f-84ab-8e87071ed9b7",
+              "uuid": "d3530dd0-3990-49e6-b8c2-dace77679400",
+              "parentUUID": "f3eff3dc-af38-44b8-bf51-1238e54aec76",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "9c478a31-d065-473c-87cc-bfae77e1f746",
-            "7aef22e2-4de9-45c3-a7c3-31a8cad54a2b",
-            "19fb787d-6686-4219-ac93-a5883374d8fe",
-            "9ef6e370-48d8-433f-9369-91c8e579e5df"
+            "07032a26-0446-457c-8ea9-2f4487f56ac6",
+            "3581e895-14f7-4295-abd3-40c801dbdb67",
+            "c4ad7526-f782-4a7e-8d97-029ad0f1d837",
+            "d3530dd0-3990-49e6-b8c2-dace77679400"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 15754,
+          "duration": 25508,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -191,7 +191,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "0ce97c5b-55fb-4fdf-a732-670969591595",
+      "uuid": "16459ac2-d203-4ce2-b406-71990250e5f4",
       "title": "",
       "fullFile": "cypress\\integration\\money_gocompare\\open-URL-money-gocompareTest.js",
       "file": "cypress\\integration\\money_gocompare\\open-URL-money-gocompareTest.js",
@@ -200,7 +200,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "0f2491b1-23f4-4c06-a23b-4255fcde8f0e",
+          "uuid": "1a834d8d-89ef-4dfe-9e75-7a1d773ca670",
           "title": "Open GoCompare URL",
           "fullFile": "",
           "file": "",
@@ -211,7 +211,7 @@
               "title": "Should open when click on URL",
               "fullTitle": "Open GoCompare URL Should open when click on URL",
               "timedOut": null,
-              "duration": 2088,
+              "duration": 2472,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -220,20 +220,20 @@
               "context": null,
               "code": "cy.visit(\"https://money.gocompare.com/vehiclefinance#/car-details\");\ncy.title('c-page-header__bar__heading > a').should('contain', 'Go Compare Money | Car Finance');",
               "err": {},
-              "uuid": "5f4d377c-14bb-41b4-914f-1a12fa44e561",
-              "parentUUID": "0f2491b1-23f4-4c06-a23b-4255fcde8f0e",
+              "uuid": "346c1e8f-adb2-4e36-80c5-dbc61479369b",
+              "parentUUID": "1a834d8d-89ef-4dfe-9e75-7a1d773ca670",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "5f4d377c-14bb-41b4-914f-1a12fa44e561"
+            "346c1e8f-adb2-4e36-80c5-dbc61479369b"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2088,
+          "duration": 2472,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -249,7 +249,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "e9a23f29-60f0-4d25-a153-88cad90f80ed",
+      "uuid": "c2b31137-43d2-4423-b491-437cc79a8cc4",
       "title": "",
       "fullFile": "cypress\\integration\\money_gocompare\\clickon-terms&condations-verify-page-titleTest.js",
       "file": "cypress\\integration\\money_gocompare\\clickon-terms&condations-verify-page-titleTest.js",
@@ -258,7 +258,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "b877ff96-8e8d-4611-adb6-75fc5d2c756d",
+          "uuid": "92f78916-dcf0-4171-a5e1-039b5118d8b9",
           "title": "Click on Terms & condition link in the website footer & verify the page title",
           "fullFile": "",
           "file": "",
@@ -269,7 +269,7 @@
               "title": "Click on the footer Terms & Condation link",
               "fullTitle": "Click on Terms & condition link in the website footer & verify the page title Click on the footer Terms & Condation link",
               "timedOut": null,
-              "duration": 3191,
+              "duration": 3034,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -278,8 +278,8 @@
               "context": null,
               "code": "cy.visit(\"https://money.gocompare.com/vehiclefinance#/car-details\");\ncy.contains('Terms and conditions');\nvar test = cy.contains('a', 'Terms and conditions').invoke('removeAttr', 'target').click({\n  force: true\n});\ncy.assert(test, 'its OK');",
               "err": {},
-              "uuid": "a64708eb-1531-45e4-8462-477fa6ba7341",
-              "parentUUID": "b877ff96-8e8d-4611-adb6-75fc5d2c756d",
+              "uuid": "c72742e4-57e4-497b-a6b1-8e9ea98526dc",
+              "parentUUID": "92f78916-dcf0-4171-a5e1-039b5118d8b9",
               "isHook": false,
               "skipped": false
             },
@@ -287,7 +287,7 @@
               "title": "Click on the footer Terms & Condation link",
               "fullTitle": "Click on Terms & condition link in the website footer & verify the page title Click on the footer Terms & Condation link",
               "timedOut": null,
-              "duration": 4780,
+              "duration": 4707,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -296,21 +296,21 @@
               "context": null,
               "code": "cy.visit(\"https://www.gocompare.com/about/terms/?contentonly=true\");\ncy.get('.hero__heading').should('contain', 'Terms and conditions');",
               "err": {},
-              "uuid": "a573ccb3-2306-4852-aef4-2e2b64d2ded0",
-              "parentUUID": "b877ff96-8e8d-4611-adb6-75fc5d2c756d",
+              "uuid": "a4a7e419-bacc-46ee-8be5-2208097561ed",
+              "parentUUID": "92f78916-dcf0-4171-a5e1-039b5118d8b9",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "a64708eb-1531-45e4-8462-477fa6ba7341",
-            "a573ccb3-2306-4852-aef4-2e2b64d2ded0"
+            "c72742e4-57e4-497b-a6b1-8e9ea98526dc",
+            "a4a7e419-bacc-46ee-8be5-2208097561ed"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 7971,
+          "duration": 7741,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
