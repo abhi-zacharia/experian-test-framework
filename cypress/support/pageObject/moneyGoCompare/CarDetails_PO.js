@@ -27,7 +27,14 @@ class CarDetails_PO {
 
         cy.get('#car-registration-search').type(vRN);
         cy.get('.c-button > span').click();
-        cy.get('div > strong').contains('VOLKSWAGEN PASSAT SE TDI 140 ');
+
+        let test = cy.get('div > strong');
+        let tes1t = cy.get('.c-alert');
+        if (test)
+            cy.contains('VOLKSWAGEN PASSAT SE TDI 140 ');
+        // cy.get('div > strong').contains('VOLKSWAGEN PASSAT SE TDI 140 ');
+        else (test1)
+        cy.should('contain', 'We are sorry but no vehicles could be found.');
         cy.get('#value').type(advertised_Price).clear();
         cy.get('#value').type(advertised_Price);
         cy.get('#depositAmount').type(deposit).clear();

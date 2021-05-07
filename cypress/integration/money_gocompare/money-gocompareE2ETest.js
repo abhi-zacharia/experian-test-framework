@@ -24,7 +24,7 @@ describe("Money-GoCompareE2E Test", () => {
     it("Should Navigate to car details page too fill the form", () => {
         cardetails_PO.carDetailsPage();
         // cardetails_PO.carDetailsPage1(data.VRN, data.advertised_price, data.deposit, data.current_mileage,
-        //data.expected_annual_mileage, data.loan_duration);
+        //     data.expected_annual_mileage, data.loan_duration);
 
     });
     it("Should navigate to About you Page to fill the form", () => {
